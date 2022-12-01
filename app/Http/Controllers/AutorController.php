@@ -10,8 +10,7 @@ class AutorController extends Controller
     
     public function index()
     {
-        $autores = Autor::latest('id')->get();
-        return view('autores.index',compact('autores'));
+        return view('autores.index');
     }
     
     public function create()
